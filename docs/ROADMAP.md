@@ -2,20 +2,24 @@
 
 ## Wave A — the hub exists
 
-- [ ] Minimal Vite + TypeScript site, the family's styles, deploy workflow to
-      Pages. Take what is portable from CsaTB rather than starting blank.
-- [ ] Landing page: five books, what each is for, who it is for, honest status.
-- [ ] Theme toggle sharing `tb-theme` with the books.
+- [x] Minimal Vite + TypeScript site, deploy workflow to Pages. Done 2026-09-14.
+- [x] Landing page: five books, what each is for, who it is for, honest status.
+- [x] Theme toggle sharing `tb-theme` with the books.
 
 ## Wave B — stats that cannot rot
 
-- [ ] Fetch each book's `data/book.json` and render real counts: chapters
-      written against planned, problems, samples, last updated.
-- [ ] Degrade honestly. A book whose data is missing or whose site is not yet
-      deployed shows as "not deployed yet" — never as zero, and never as a
-      number carried over from last time.
-- [ ] Per-book progress bars driven by `status: complete`, the same flag the
-      books' own `/progress/` pages use.
+- [x] Fetch each book's `data/book.json` and render real counts. Done
+      2026-09-14: chapters and problems, read live from each deployed book.
+- [x] Degrade honestly — "numbers unavailable" when the fetch fails,
+      "no site yet" when there is nothing to fetch. Never zero, never stale.
+- [ ] **Blocked: per-book progress bars.** `status: complete` is *not* in the
+      published `data/book.json` — `toNav` drops it, so the hub can count
+      chapters but cannot tell finished ones from drafts. Fixing this means
+      adding `status` to the search/nav payload in each book's
+      `build/plugin.ts`, then reading it here. Until then, do not invent a
+      progress figure.
+- [ ] Samples verified and last-updated are likewise not published yet; same
+      fix, same file.
 
 ## Wave C — worth having, not urgent
 
