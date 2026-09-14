@@ -38,11 +38,11 @@ export const BOOKS: readonly Book[] = [
   {
     repo: 'CsaTB',
     title: 'AP Computer Science A',
-    subject: 'The exam, not the language: the tested subset and where the rubric gives points.',
+    subject: 'The exam, not the language: the tested subset, and nothing the paper does not ask for.',
     audience: 'Students sitting AP CSA.',
     deployed: true,
     ap: true,
-    note: 'Just scaffolded — the engine runs, the chapters are not written yet.',
+    note: 'All four units covered. Data Collections is the deepest; units 1 and 2 want more.',
   },
   {
     repo: 'CalTB',
@@ -51,7 +51,7 @@ export const BOOKS: readonly Book[] = [
     audience: 'Students sitting AP Calculus AB or BC.',
     deployed: true,
     ap: true,
-    note: 'Early — the machinery that checks every result is built, and the chapters are arriving.',
+    note: 'All ten units covered. Answers are graded on what they mean, not how they are spelled.',
   },
   {
     repo: 'PhysTB',
@@ -60,7 +60,7 @@ export const BOOKS: readonly Book[] = [
     audience: 'Students sitting either Physics C exam.',
     deployed: true,
     ap: true,
-    note: 'Early — the site is up and the chapters are arriving.',
+    note: 'All thirteen units covered, with simulations you can drag to watch a formula hold or fail.',
   },
 ];
 
