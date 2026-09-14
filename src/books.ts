@@ -49,18 +49,18 @@ export const BOOKS: readonly Book[] = [
     title: 'AP Calculus AB/BC',
     subject: 'One book for both courses, where every worked result is checked by a program.',
     audience: 'Students sitting AP Calculus AB or BC.',
-    deployed: false,
+    deployed: true,
     ap: true,
-    note: 'The verifier that checks the mathematics is built. The site is not.',
+    note: 'Early — the machinery that checks every result is built, and the chapters are arriving.',
   },
   {
     repo: 'PhysTB',
     title: 'AP Physics C',
     subject: 'Mechanics and E&M, with every result checked against a simulation.',
     audience: 'Students sitting either Physics C exam.',
-    deployed: false,
+    deployed: true,
     ap: true,
-    note: 'Planned. Shares CalTB’s machinery, so it waits on that.',
+    note: 'Early — the site is up and the chapters are arriving.',
   },
 ];
 
